@@ -84,6 +84,9 @@
 	  $('#dataTable').html(html);
 
 	  $('#dataTable').dataTable().columnFilter();
+
+		$('#dataTable').dataTable( {
+			"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
     };
     reader.onerror = function(){ alert('Unable to read ' + file.fileName); };
   }

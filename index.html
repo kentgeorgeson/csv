@@ -8,6 +8,7 @@
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
 
 <!-- Javascript Libraries -->
@@ -24,26 +25,24 @@
 $(document).ready(function() {
   if(isAPIAvailable()) {
     	$('#files').bind('change', handleFileSelect);
+
   }
 });
 </script>
 </head>
 <body>
-	<div id="navbar">
-		<div id="projectName">CSV</div>
-	</div>
-	<div id="container">
+
+	<div class="container">
+		<form class="form">
+			<input type=file id=files name=files[] class='btn'/>
+			<output id=list></output>
+		</form>
+		
 		<div id="fileContent">
 			<table id="dataTable" class='table tablesorter table-striped table-hover'>
 			</table>
 		</div>
-		
-		<div id="sidebar">
-			<form class="form">
-				<input type=file id=files name=files[] class='form-control btn btn-default'/>
-				<output id=list></output>
-			</form>
-		</div>
+
 	</div> <!-- Container -->	
 </body>
 
