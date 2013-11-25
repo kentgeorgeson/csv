@@ -1,0 +1,21 @@
+#dataTable {
+	width: 100%;
+	padding: 30px;
+	font-family: san-serif;
+	font-size: 11px ;
+	overflow: scroll;
+}
+
+#dataTable_length {
+	float: left;
+	width: 50%;
+}
+
+#dataTable_filter {
+	float: right;
+	widht: 50%;
+}
+#dataTable.table {
+	clear: both;
+	margin: 60px;
+}
